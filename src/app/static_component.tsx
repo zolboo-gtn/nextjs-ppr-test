@@ -1,3 +1,3 @@
 export const StaticComponent: React.FC = () => {
-  return <div>{new Date().toISOString()}</div>;
+  return <div>Static Component</div>;
 };

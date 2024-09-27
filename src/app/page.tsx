@@ -8,12 +8,11 @@ export default async function Home() {
   return (
     <main>
       <StaticComponent />
-      <DynamicComponent timeout={1000} />
       <Suspense fallback={<div>Loading...</div>}>
-        <DynamicComponent timeout={2000} />
+        <DynamicComponent timeout={1000} />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <DynamicComponent timeout={3000} />
+        <DynamicComponent timeout={2000} />
       </Suspense>
     </main>
   );

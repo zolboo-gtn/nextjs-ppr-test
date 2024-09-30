@@ -1,7 +1,8 @@
 "use client";
 
 import { useActionState } from "react";
-import { testAction } from "./action";
+
+import { testAction } from "@/actions/test_action";
 
 export const Form = () => {
   const [message, formAction, isPending] = useActionState<

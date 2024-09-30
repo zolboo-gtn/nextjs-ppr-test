@@ -4,7 +4,7 @@ import { DynamicComponent } from "@/components/dynamic_component";
 import { StaticComponent } from "@/components/static_component";
 
 export const experimental_ppr = true;
-export default async function Home() {
+const Home: React.FC = () => {
   return (
     <main>
       <StaticComponent />
@@ -16,4 +16,5 @@ export default async function Home() {
       </Suspense>
     </main>
   );
-}
+};
+export default Home;

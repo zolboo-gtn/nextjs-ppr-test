@@ -1,8 +1,7 @@
 import { cookies } from "next/headers";
 
-export const DynamicComponent: React.FC<{ timeout: number }> = async ({
-  timeout,
-}) => {
+type Props = { timeout: number };
+export const DynamicComponent: React.FC<Props> = async ({ timeout }) => {
   const session = cookies().get("session")?.value;
   await new Promise((resolve) => setTimeout(resolve, timeout));
 
